@@ -11,5 +11,11 @@ def read_file_list_str(path: str) -> List[str]:
     return [line for line in read_file(path).split("\n")]
 
 
+def read_file_reverse_list_str(path: str) -> List[str]:
+    l = read_file_list_str(path)
+    l.reverse()
+    return l
+
+
 def read_file_list_int(path: str) -> List[int]:
     return [int(n) for n in read_file(path).split("\n")]

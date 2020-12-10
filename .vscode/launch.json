@@ -6,6 +6,11 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
+            "pythonArgs": [
+                "-m",
+                "pytest",
+                "-s"
+            ],
             "console": "internalConsole",
             "env": {
                 "PYTHONPATH": "."

@@ -50,7 +50,30 @@ def real():
     real_data = read_file_list_str("data.txt")
     part1 = count_non_allergens(real_data)
     print(f"Part 1: {part1}")
-    print(f"Part 2: {part2}")
+    # P1 allergens :
+    # {
+    #     "fish": {"kxjttzg", "mnzbc", "zjmdst", "ldm"},
+    #     "nuts": {"mnzbc", "fkjmz"},
+    #     "sesame": {"ndvrq"},
+    #     "peanuts": {"mnzbc", "zjmdst", "fqfm"},
+    #     "wheat": {"kjkrm", "mnzbc", "ndvrq"},
+    #     "dairy": {"kxjttzg", "mnzbc", "fqfm"},
+    #     "shellfish": {"ndvrq", "fkjmz"},
+    #     "eggs": {"kxjttzg", "kjkrm"}
+    # }
+    # After removing unique results :
+    # {
+    #     "fish": {"ldm"},
+    #     "nuts": {"mnzbc"},
+    #     "sesame": {"ndvrq"},
+    #     "peanuts": {"zjmdst"},
+    #     "wheat": {"kjkrm"},
+    #     "dairy": {"fqfm"},
+    #     "shellfish": {"fkjmz"},
+    #     "eggs": {"kxjttzg"}
+    # }
+    # After sorting:
+    # fqfm,kxjttzg,ldm,mnzbc,zjmdst,ndvrq,fkjmz,kjkrm
 
 
 test()

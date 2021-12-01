@@ -20,7 +20,7 @@
 		"prefix": "aocday",
 		"body": [
 			"from typing import List, Tuple",
-			"from y2020.libs.read_file import read_file_list_str",
+			"from y2021.libs.read_file import read_file_list_str",
 			"",
 			"def f():",
 			"    pass",
